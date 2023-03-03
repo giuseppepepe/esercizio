@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<HTMl>
+<HEad>
+<title>CSS</title>
+<!--css in pagina per modificare i contenuti all'interno della pagina-->
+<style>
+
+
+p {color:blue;
+}
+.polonord{color:violet;
+}
+#polosud{color: brown;
+}
+#polo{background-color: chartreuse;
+color:navy}
+</style>
+<!--css esterno è utile per dare priorità a tutte le pagine di un sito esterno-->
+<link rel="stylesheet" href="stile.css" type="text/css">
+
+
+</HEad>
+<BODY>
+<!--css in linea per modificare un singolo oggetto con delle proprietà specifiche-->
+<h3>IL MIO TITOLO</h3>
+<p style="color:blue;background-color: coral;">il mio primo paragrafo</p>
+<p class="polonord" id="polo">il mio secondo paragrafo</p>    
+<p id="polosud">il mio terzo paragrafo</p>
+
+
+
+
+
+</BODY>
