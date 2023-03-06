@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<style>
+    body{background-image: url( https://images.pexels.com/photos/1878293/pexels-photo-1878293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 );
+    background-size: 500px 500px;
+    }
+    div{ 
+    width:100px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    padding-top: 60px;
+    background-image: linear-gradient(red, yellow )
+}
+    .primo{text-align: center;
+           margin: auto;
+           background-image: linear-gradient(pink, red);
+           
+           
+}
+</style>
+</head>
+<body>
+   <div>AUSTRALIA</div>
+   <p class="primo"> L'Australia (pronuncia italiana /auˈstralja/[5]; in inglese: Australia, pronuncia britannica [ɒˈstreɪlɪə], pronuncia locale [əˈstɹæɪljə]), ufficialmente il Commonwealth dell'Australia, è il sesto Paese del mondo per estensione (7688287 km², in gran parte desertici)[6] e il più grande dell'Oceania. Ha una popolazione di oltre 25 milioni di abitanti, quasi interamente residenti sulle coste. La sua capitale è Canberra, mentre la città più popolata è Sydney, seguita da Melbourne, Brisbane, Perth e Adelaide. </p>
+   
+
+
+
+
+</body>
+</html>
