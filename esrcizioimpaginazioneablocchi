@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>titolo pagina</title>
+<meta name="decrition" content="descrizione pagina">
+<style>
+body{margin: 0;}
+.testata{background-color: aqua;
+         width: 40%;
+         text-align: center;
+         padding: 5px;
+         float: left
+}
+.nav{background-color: yellow;
+    width: 40%;
+    padding: 5px;
+    margin-left: 37%;
+    text-align: center;
+    
+}
+
+
+
+.descrizione{ background-color:blue;
+              padding: 5px;
+              
+}
+
+li a {text-decoration: none;
+    
+}
+
+li{color: white;
+   display: inline-block;
+   width: 50px;
+
+}
+.storia{overflow: auto;
+
+}
+
+</style>
+</head>
+<body>
+    <div class="testata">
+        <p>AUSTRALIA</p>
+    </div>
+
+    <div class="nav">
+        <ul>
+           <li><a href="home">home</a></li>
+           <li><a href="servizi">servizi</a></li>
+        </ul>
+    </div>
+    <div class="descrizione"><p>il paese del nuovo mondo</p></div>
+    <div clas="storia"><p>Sidney è la città più grande e popolosa dell'Australia, situata nella regione del Nuovo Galles del Sud. Fondata nel 1788, fu la prima colonia penale britannica in Australia. La città prende il nome dal segretario di stato britannico Thomas Townshend, Lord Sydney.
+
+        Durante il XIX secolo, Sidney divenne un importante centro commerciale e culturale grazie all'arrivo di molti immigrati europei e asiatici. Nel 1851, la scoperta dell'oro in Australia Victoria portò a un afflusso di immigrati provenienti da tutto il mondo e a un boom economico per Sidney.
+        
+        Durante la seconda guerra mondiale, Sidney fu teatro di attacchi giapponesi aerei e navali, noti come la "Battaglia per Sidney". Questi attacchi causarono gravi danni alla città e alla sua infrastruttura, ma Sidney fu rapidamente ricostruita dopo la fine della guerra.
+        
+        Nel 1973, la celebre Opera House di Sidney fu completata e divenne uno dei più famosi simboli della città e dell'Australia. La struttura unica in stile modernista è stata progettata dall'architetto danese Jørn Utzon e si affaccia sul porto di Sidney.
+        
+        Oggi, Sidney è una città cosmopolita e multiculturale con una popolazione di oltre 5 milioni di abitanti. È un importante centro finanziario dell'Asia-Pacifico e una delle città più visitate al mondo. Sidney ospita anche importanti eventi culturali come il Festival di Sidney, il Vivid Sydney e il Sydney Gay and Lesbian Mardi Gras.
+        
+        Inoltre, Sidney è famosa per le sue spiagge, tra cui la famosa Bondi Beach, e il suo iconico ponte Harbour Bridge, che collega il centro della città con la zona nord. La città è anche un importante centro sportivo, ospitando eventi come le Olimpiadi estive del 2000 e l'Open di tennis dell'Australian.
+        
+        In sintesi, Sidney è una città ricca di storia, cultura e bellezze naturali che la rendono una delle destinazioni turistiche più popolari al mondo. </p>
+    </div>
+    <div class="immagine"><img src=" https://cdn.pixabay.com/photo/2014/04/04/10/51/cityscape-313216_960_720.jpg " >
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
