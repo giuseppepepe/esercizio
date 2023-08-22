@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--il titolo della pagina è quello che compare nel motore di ricerca, il tag titile compare anche nella barra in alto della ricerca-->
+<title>titolo della pagina</title>
+<!-- meta name sta a significare la descizione del contento della pagina nel motore di ricerca-->
+<meta name="description" content="l'australia e tutte le sue meraviglie da visitare" >
+
+</head>
+<body>
+    <!-- questo tag(h1) è il titolo più grande-->
+    <!--per spostare il testo usiamo il tag aligne (center, left, right)-->
+    <!--align è l'attributo , mentre "center" è la propietà-->
+    <h1 align="center">titolo grande di una pagina</h1>
+<!--da h1 ad h6 il titolo diventerà sempre piu piccolo-->
+<h2 align="left">titolo piu piccolo</h2>
+<h3 align="right">titolo ancora piu piccolo di h2</h3>
+<!--i paragrafi invece si usa il tag "P"-->
+<!--per mandare a capo un testo possiamo usare il tag BR-->
+<p>questp è un<br> paragrafo </p>
+<!--in questo tag address possiamo indicare un indirizzo-->
+<address>
+    VIA ofanto 7/a
+</address>
+<!--per fare una linea dritta su tutta la pagina, usiamo il tag HR-->
+<HR>
+<code>testo in macchina da scrivere</code>
+<!--tag per mettere un testo che scorre sulla pagina è MARQUE-->
+<marquee>testo che scorre sulla pagina</marquee>
+<!--per mettere un testo in grassetto dovete mettere il tag strong con la parola o frase dentro il tag-->
+<!--se vogliamo una parte del testo in corsivo si mettere il tag i-->
+<!--se vogliamo una parte del testo sottolineata o tutta la frase si usa il tag u-->
+<p><u>per <i>mettere</i> un <strong>testo in grassetto</strong></u><mark> oppure un testo evidenziato con il tag mark</mark><del>testo barrato al centro</del></p>
+
+</body>
+
+
+</html>
