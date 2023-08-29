@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;900&display=swap" rel="stylesheet">
+    <style>
+
+        
+     p{color:#00ff00 ;
+       background-color: rgb(128,128,0 ) ;
+       text-align: center;
+       width: 50%;
+       height: 200px;
+       margin: 0 auto;
+       text-decoration: underline;
+       text-transform:  capitalize;
+       text-shadow: 2px 6px 1px; 
+       box-shadow: 5px 5px;
+       font-size: 40pt;
+       font-family: titillium web;
+    }
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <p>paragrafo</p>
