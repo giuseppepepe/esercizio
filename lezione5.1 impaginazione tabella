@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>elenchi</title>
+<meta name="description" content="elenchi">
+
+
+</head>
+<body>
+  <!-- il tag table include il blocco tabella, una tabella è comporta da riga e colonne-->
+<table width="100%">
+<!--la forma più semplice per creare una riga si usa il tag "tr" che vuole dire trace row(traccia una riga) se voglia una colonna con tre righe dobbiamo creare tre volte tr, le tabelle non hanno colonna, per creare basta indetificare il nuemero di celle che vogliamo inserire-->
+<!--la cella si indica con il tag "td"-->
+<tr><td>nome</td><td>cognome</td><td>numero di telefono</td></tr>
+<!--le celle possono avere anche un'altro tag-->
+<tr><td>alessio</td><td>paolieri</td><td>numero di telefono</td></tr>
+<tr><td>giueppe</td><td>pepe</td><td>  3349259082</td></tr>
+
+
+
+<!--per far comparire il bordo nelle cell bisogna mettere il tag "border"-->
+<table width="100%" border=5px>
+  
+  <!--il tag "th" sta a indicare le celle di intestazione, andando al centro della cella-->
+  <tr><th>nome</th><th>cognome</th><th>numero di telefono</th></tr>
+  <!--se voglio unire le due celle di alessio e paolieri devo usare un attributo "colspan" indicando il numero di celle che voglio unire (quindi colspan unise due celle in orizzontale)-->
+  <!--se invece voglio unire due celle in verticale utilizzero un attributo "rowsapn" indicando il numero di celle che si vuole unire-->
+  <tr><td colspan="2">alessio</td><td>paolieri</td><td rowspan="2">3349259082</td></tr>
+  <tr><td>giueppe</td><td>pepe</td><!--<td>  3349259082</td>--></tr>
+
+</table >
+
+<!-- esercizio provare a creare una tabella che prende tutto lo schermo della pagina 1400px, dopo aggiungere 2 righe e mettere 2 celle di cui la prima celle deve essere grande 400px e la seconda cella di 1000px e fare la seconda cella fate la setssa cosa ma inserire un paragrafo a tua scelta e in quella da 1000px mettere un video e un immagine-->
+
+<table width=1400px border=2px >
+
+  <tr><td width="400px"><p>Il comunismo (dal francese communisme, derivato da commun "comune"[1][2]) è un'ideologia, intesa come sistema di valori, composta da un insieme di idee economiche, filosofiche, sociali e politiche miranti alla creazione di una società comunista, ovvero una società egualitaria caratterizzata dall'abolizione delle classi sociali, della proprietà privata dei mezzi di produzione, dalla completa emancipazione di tutti i cittadini, dalla partecipazione del popolo al governo e, progressivamente, dall'estinzione dello Stato. </p></td><td width="100%" ><img src=https://images.pexels.com/photos/12001644/pexels-photo-12001644.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1></td></tr>
+  <tr><td width="4oopx"><p>Il fascismo è un movimento politico di estrema destra sorto in Italia nel 1919 ad opera del politico, giornalista e in seguito dittatore, Benito Mussolini. Salì al potere in Italia nel 1922 fino al 1943. Alcune delle dottrine e pratiche elaborate e adottate dal fascismo italiano si sono diffuse in seguito, in Europa e in altri Stati del mondo, dove il termine è usato per estensione.[1] </p></td><td width="1000px"> <iframe width="100%" height="315" src="https://www.youtube.com/embed/gMD6hl5yfVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td></tr>
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+</body>
+</html>
