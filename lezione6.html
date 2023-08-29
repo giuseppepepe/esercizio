@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css in linea</title>
+<!--questa modalità si chiama "css in pagina"-->
+<!--un'altra modalità di inserimento si chiama "css in pagina, si utilizzia il tag "style" nela sezione head-->
+<!--devo indicare il codice html che voglio modificare, in questo caso verra modificato tutto quello che è rappresentato in qualsiasi pagragrafo(p)-->
+<!--il css in pagina è superiore al css esterno-->
+<!--il css in pagine si utilizza solo se si vogliono modicare gli elementi all'allinterno della pagine-->
+<!--se voglio cambire le proprietà di un solo paragrago, diamo l'attributo "class" invece di "style"-->
+<style>
+p{ color:brown;
+}
+/**questa è la modalità che si vuole usare se si vuole cambiare un singolo paragrafo in pagina**/
+.polonord{ color:black; background-color: blueviolet;
+
+}
+/** per richiamare un oggetto con il tag "id si unsa il "#" invece del "."**/
+#polosud{color:violet; background-color: tomato;
+
+}
+</style>
+<!--questa modalità si chiama "css esterno"-->
+<!--per poter creare un css esterno dobbiamo creare un'altra cartella "stilr.css" sempre nella stessa cartella dove abbiamo creato la pagina html e scriviamo il nostro codice css-->
+<!--dopodichè dobbiamo inserire il seguente link-->
+<!--ogni volta che vogliamo collegare un css esterno qdobbiamo fare questa procedura, sempre nella sezione head-->
+<!-- il css esterno serve se voglio applicare le stesse proprità alle pagine di un sito -->
+<link rel="stylesheet" href="stile.css" type="text/css">
+</head>
+<body>
+
+<h3>il mio titolo</h3>
+<!--questa modalità di chiama "css in linea
+    "-->
+<!--css in liena si usa quando vogliamo modifcare un singolo oggetto, ed è superiore al css in pagina e di quello esterno-->
+<!--css in linea, questa modalità di inserimento è css in linea-->
+<!-- leggendo questa riga vediamo la proprietà "colore" e l'opzione "blue", oppure, proprietà "background- color" e l'opzione "acquamarine"-->
+<p style="color: blue; background-color: aquamarine;">primo paragrafo</p>
+<p class="polonord">secondo paragrafo</p>
+<!-- posso dare un noe ad un oggetto anche con "id" invece di usare "class"-->
+<!-- GENERALEMTNE IN CSS è MEGLIO USARE "CLASS", IL TAG "ID" è MEGLIO USARLO IN JAVASCRIPT-->
+<p id="polosud">terzo paragrafo</p>
+
+
+</body>
+
+</html>
