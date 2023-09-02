@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>titolo pagina</title>
+<meta name="description" content="descrizione">
+<style>
+header{
+     background-color: blue;
+     text-align: center;
+     color: aliceblue;
+     height: 60px;
+     /*se io applico un padding all'header si ha un risulatot diverso, ossia 1px vale a significare 12px, vedi esempio sotto*/
+     padding: 1px;
+    }
+nav{
+    background-color: blueviolet;
+    /*stessa cosa se uso il padding nel nav, andandosi ad unire alle sezionj che trova vicino*/
+    padding: 1px;
+   
+}
+li{ list-style-type: none; /*questo tag toglie i puntini difianco*/
+    display: inline-block; /*con uesto mette gli oggetti in una sottile linea in unico blocco*/
+    width: 50%;
+}
+li a {
+    text-decoration: none;
+    color: rgb(212, 191, 221);
+}
+main{
+    background-color:aquamarine ;
+  /*se uso un leggero padding a sinistra ci sarà più spazio verso sinistra*/
+  padding-left: 10px;
+    height: 300px
+
+    
+}
+section{background-color: aquamarine;
+    padding-left: 10px;
+    height: 150px;
+}
+footer{
+    background-color: darkcyan;
+}
+</style>
+
+</head>
+<body>
+<!--la pagina peò essere suddivisa in vari riquadri in base alla loro posizione-->
+<!--in alto troviamo un riquadro che si chiama "heder" è letteralmente la testat del sito web-->
+<header><h1>testata</h1></header>
+<!--al di sotto dell'header è stato creato un blocco per la navigazione con il tag "nav"-->
+<!--per vedere meglio i contenuti diamo uno sfondo a ciascun blocco, quindi vao in style inserire il tag dell CSS-->
+<nav><ul>
+         <li>
+             <a href="#">home</a></li><li><a href="#">servizi</a>
+         </li>
+     </ul>
+</nav>
+<!--POI TROVIA O MAIN CHE INCLUDE TUTTI I CONTENUTI AL DI SOTTO DELLA TESTATA -->
+<main>
+    <!--all'interno del main posso inserire degli oggetti chiamate sezioni-->
+<section>sezione 1</section>
+<section>sezione 2</section>
+
+</main>
+<!--al di sotto c'è il footer, introduce un blocco con la scrittua a macchina da scrivere-->
+<!--il footer aderisce automaticmanet al main-->
+<footer><code>by giuseppe pepe</code></footer>
+</body>
+
+
+
+
+
+</html>
