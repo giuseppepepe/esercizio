@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>titolo pagina</title>
+<meta name="description" content="descrizione">
+<style>
+    body{
+        margin: auto;
+    }
+header{
+     background-color: blue;
+     text-align: center;
+     color: aliceblue;
+     height: 60px;
+     /*se io applico un padding all'header si ha un risulato diverso, ossia 1px vale a significare 12px, vedi esempio sotto*/
+     padding: 1px;
+    }
+nav{
+    background-color: blueviolet;
+    /*stessa cosa se uso il padding nel nav, andandosi ad unire alle sezionj che trova vicino*/
+    padding: 1px;
+   
+}
+/* da qui partono le sezioni del sito*/
+li{ list-style-type: none; /*questo tag toglie i puntini difianco*/
+    display: inline-block; /*con uesto mette gli oggetti in una sottile linea in unico blocco*/
+    width: 50%;
+}
+li a {
+    text-decoration: none;
+    color: rgb(212, 191, 221);
+}
+main{
+    background-color:aquamarine ;
+  /*se uso un leggero padding a sinistra ci sarà più spazio verso sinistra*/
+   /* padding-left: 10px;*/
+    height: 300px
+}
+
+/*le section non possono essere più grandi del main perche senò si sconvolgono le misure dei px*/
+section{background-color: aquamarine;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 150px;
+    
+}
+.ciao{
+    background-image: url( https://images.pexels.com/photos/1878293/pexels-photo-1878293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 );
+    background-size: cover; /*uso cover per far rendere all'immagine in ttto il blocco*/
+    background-position: center;
+    height: 150px;
+    /*"display:none" rimuove l'oggetto e lscia un vuoto che può essere occupato da altri oggetti*/
+    /*"visibility:hidden" rimuove l'oggetto ma non lascia un vuoto per farlo prendere ad altri*/
+}
+.addio{
+    height: 150px;
+    /* mettendo questa proprietà uscità una barra sulla destra che ermetterà al testo di stare dentro la sezione cosichè possiamo socrrere il testo in alto o in basso*/
+   /* overflow: scroll;/*
+    /* con overflow "auto" metterà la barra solo se necessario*/
+    /* overflow x agisce sulle barre orizzontali, overflow y su quelle verticali*/
+    overflow: auto;
+}
+footer{
+    background-color: darkcyan;
+}
+</style>
+
+</head>
+<body>
+<!--la pagina peò essere suddivisa in vari riquadri in base alla loro posizione-->
+<!--in alto troviamo un riquadro che si chiama "heder" è letteralmente la testat del sito web-->
+<header><h1>testata</h1></header>
+<!--al di sotto dell'header è stato creato un blocco per la navigazione con il tag "nav"-->
+<!--per vedere meglio i contenuti diamo uno sfondo a ciascun blocco, quindi vao in style inserire il tag dell CSS-->
+<nav><ul>
+         <li>
+             <a href="#">home</a></li><li><a href="#">servizi</a>
+         </li>
+     </ul>
+</nav>
+<!--POI TROVIA O MAIN CHE INCLUDE TUTTI I CONTENUTI AL DI SOTTO DELLA TESTATA -->
+<main>
+    <!--all'interno del main posso inserire degli oggetti chiamate sezioni-->
+<section class="ciao"><p>finalmente sto imparando as editare</p></section>
+<!-- mettero questo testo nella seconda sezione, il testo uscirà fuori dalla sezione, quindi dovremo trovare un modo per farlo entrare dentro lo schema, utilizzanod una proprietà  chiamata "overlofw"-->
+<section class="addio"><p>L'Australia è un vasto paese situato nell'emisfero sud, nell'Oceania, ed è il sesto paese più grande al mondo per superficie. Ecco alcune informazioni chiave sull'Australia:
+
+    Geografia: L'Australia è un continente-isola con una varietà di paesaggi, tra cui deserti, foreste pluviali, montagne, pianure e coste frastagliate. La sua posizione nell'emisfero sud le conferisce una grande diversità climatica, con regioni che vanno da tropicali a temperate.
+    
+    Popolazione: L'Australia ha una popolazione di circa 25 milioni di persone, concentrata principalmente nelle città costiere come Sydney, Melbourne, Brisbane e Perth. Gli aborigeni australiani, i popoli indigeni dell'Australia, costituiscono una parte significativa della popolazione.
+    
+    Lingua: L'inglese è la lingua ufficiale dell'Australia, ma ci sono molte lingue e dialetti diversi parlati a causa della diversità etnica e culturale del paese.
+    
+    Economia: L'economia australiana è tra le più sviluppate e avanzate al mondo. Il paese è noto per le sue abbondanti risorse naturali, tra cui il carbone, il ferro, l'oro e il gas naturale. L'agricoltura è anche un settore importante, con esportazioni di carne bovina, lana e cereali.
+    
+    Cultura: L'Australia ha una cultura diversificata, influenzata da una varietà di tradizioni e influenze, compresi gli indigeni australiani, gli immigrati europei e asiatici. Lo stile di vita australiano è spesso associato al mare, allo sport, alla natura e alla vita all'aperto.
+    
+    Fauna e flora: L'Australia è famosa per la sua fauna unica, che include animali come il canguro, il koala, il diavolo della Tasmania e il wombat. Molte di queste specie non si trovano da nessun'altra parte al mondo. La flora è altrettanto varia, con una grande varietà di piante native.
+    
+    Politica: L'Australia è una monarchia costituzionale con un sistema parlamentare. È membro del Commonwealth delle nazioni e il capo di stato è il monarca britannico, attualmente la regina Elisabetta II. Il paese è diviso in sei stati e due territori federali, ciascuno con il proprio governo.
+    
+    Turismo: L'Australia è una destinazione turistica popolare grazie ai suoi paesaggi mozzafiato, alle spiagge, ai parchi nazionali e alle città vivaci. Attrazioni iconiche includono la Grande Barriera Corallina, l'Opera di Sydney, l'Uluru (noto anche come Ayers Rock) e le città costiere.
+    
+    Ambiente: L'Australia affronta alcune sfide ambientali, tra cui la gestione delle risorse idriche, la conservazione della biodiversità e il cambiamento climatico. Il paese ha impegnato sforzi significativi per preservare i suoi ecosistemi unici.
+    
+    Sport: Lo sport è parte integrante della cultura australiana, e il paese è noto per il suo coinvolgimento in sport come il cricket, il rugby, l'atletica e l'hockey. L'Australia ospita anche l'Open di tennis dell'Australia e il Gran Premio di Formula 1 dell'Australia.
+    
+    L'Australia è un paese ricco di bellezze naturali, cultura vibrante e una qualità della vita elevata, ed è una meta ambita sia per i turisti che per chi cerca opportunità di studio e lavoro.</p> </section>
+
+</main>
+<!--al di sotto c'è il footer, introduce un blocco con la scrittua a macchina da scrivere-->
+<!--il footer aderisce automaticmanet al main-->
+<footer><code>by giuseppe pepe</code></footer>
+</body>
+
+
+
+
+
+</html>
