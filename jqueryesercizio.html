@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--jquery core 3.7, dove stabilisci che le varibili devono essere di una certa tipologia-->
+    <!--jquery ha 3 librerie, a seconda di quelle che vogliamo implemntare, la "ui" sarebbe la componente dell'user interface,poi abbiamo la "mobile" che serve per creare interfaccia per applicazioni mobili, poi sizzle e unit che ques'ultima potenzia l'applicazione-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--jquery UI, SERVE PER GLI OGGETTI E I COMPONENTI PER IL SITO WEB-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <!--TEMA GRAFICO DI JQUERY-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http:://jqueryui.com/resources/demos/style.css">
+<style>
+ 
+  #droppable { width: 150px; height: 150px;  float: left; margin: 10px;text-align: center;  }
+  #draggable, #draggable-nonvalid { overflow: hidden; border-radius: 30px;  background-color: blueviolet; width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+  #draggableone-nonvalid, #draggableone{border-radius: 30px; background-color: blue; width: 100px; height: 100px; padding: 0.5em; float: left; margin: 110px 10px 10px 0; }
+  #droppableone { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+  .testa{ background-color: aquamarine; width: 100%px; height: 50px;}
+  .ui-state-highlight{ background-image:url("https://cdn.pixabay.com/photo/2020/04/16/18/36/sixth-birthday-candle-5051899_1280.png");background-size:cover;}
+  
+</style>
+<script>
+    $( function() {
+      $( "#draggable,#draggable-nonvalid,#draggableone-nonvalid,#draggableone" ).draggable();
+      $( "#droppable,#droppalbeone" ).droppable({
+        accept: "#draggable,#draggableone",
+        classes: {
+          "ui-droppable-active": "ui-state-active",
+          "ui-droppable-hover": "ui-state-hover"
+         
+          
+        },
+        
+
+        
+        drop: function( event, ui ) {
+          $( this )
+            .addClass( "ui-state-highlight" )
+            .addClass( "ui-state-highlightone" )
+            .find( "p" )
+              .html( "esatto" );
+        }
+      });
+    } );
+    </script>
+
+    
+</head>
+<body>
+  <div class="testa">scegli l'opzione giusta</div>
+  
+      <div>
+        <p id="draggable-nonvalid" class="ui-widget-content" >sbagliato</p>
+      </div>
+       
+      <div >
+        <p id="draggable" class="ui-widget-content">giusto</p>
+      </div>
+       
+      <div >
+         <p id="droppable" class="ui-widget-header">giusta opzione</p>
+      <div >
+          <p id="draggableone-nonvalid" class="ui-widget-content">sbagliato1</p>
+      </div>  
+        
+      <div >
+          <p id="draggableone" class="ui-widget-content" >giusto1</p>
+      </div>
+        
+      <div >
+          <p id="droppableone" class="ui-widget-header">giusta opzione1</p>
+      </div>
+        
+</body>
+
+
+</html>
