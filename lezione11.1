@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: yellow;
+            margin: 0 auto; 
+        }
+        /*questo è l'inizio del blocco grande*/
+        .bloccouno{background-color:yellowgreen;/*se non diamo le dimensioni, il blocco del colore andrà sempre a prendere tutto lo schermo*/
+                  padding: 1px;
+                  /*con il tag "max-widht"intendo dire che il blocco non deve essere più grande di..:*/
+                  width: 80%;
+                  margin:0 auto; /*con questo tag il blocco andrà automaticamente al centro delo schermo*/
+                  /*text-align: center;*/
+                  /* con il tag "min-widht" intendo dire che il blocco non deve essere minore di..*/
+                  min-width: 50%;
+                  height: 300px;
+                  /*per non fare uscire i contenuto usiamo il tag "overflow:hidden*/
+                  overflow: hidden;
+        }
+        /*da qui cominciano i blocchi piu piccoli, scritte*/
+        /*con questo blocco css potro usare solo quello che è dentro la classe "h1"*/
+        .bloccouno h1{
+            text-align: center;
+        }
+        /*poi per ultimo nel blocco mettiamo l'immagine*/
+        .bloccouno img{
+            width: 100%;
+            height: 188px;
+        }
+        .bloccodue{
+            width: 500px;
+            background-color: violet;
+            padding: 5px;
+            border: 1px solid black;/* nel bordo va prima i px , il ipo del bordo e poi il colore*/
+            /*mettiamo margin che è la distanza dal foglio*/
+            margin: 10px;
+
+        }
+        .bloccotre{ 
+            width: 500px;
+            background-color: rgb(130, 150, 238);
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            box-sizing: border-box;/*quindi questa proprità fa in modo che l'oggetto rimanga sempre di questi px, fa in modo che i px non si sommano */
+            border-top: 2px solid black;/* nel bordo va prima i px , il ipo del bordo e poi il colore*/
+            border-left: 10px dotted black;
+            border-bottom: 20px dashed black;/*nel momento in cui aggiungete i px al bordo vanno ad aggiungersi insieme ai px del padding, quindi è stato inventata il tag box sizing, ossia impedisce al bordo di aumentare i px*/
+            border-right: 20px solid black;
+            /*mettiamo margin che è la distanza dal foglio*/
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+
+        }
+        /* i tag "position relative consente a un oggeto di muoversi,"
+    </style>
+</head>
+<body>
+    <div class="bloccouno">
+     <h1>
+        il mio <span style="color: tomato;">primo editore</span> 
+     </h1>
+     <p>il mio primo capitolo</p>
+     <img src="https://cdn.pixabay.com/photo/2013/07/02/22/20/bouquet-142876_1280.jpg " alt="">
+    </div>
+    <div class="bloccodue">blocco 2</div>
+    <div class="bloccotre">blocco3</div>
+</body>
+</html>
