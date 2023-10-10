@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>primo esercizio javascript</title>
+<style>
+.macchina{ width: 100%;
+           height: 500px;
+}
+
+</style>
+
+
+</head>
+<body>
+   <p style="text-align: center; font-size: large; color:blue;">lamborghini</p>
+    <img class="macchina" src =https://media.istockphoto.com/id/109722663/it/foto/auto-sportiva.jpg?s=1024x1024&w=is&k=20&c=Bkb7n8-AYFfTaVZwg-bVEIbJvTujtZWOl7P97z1x1zI=>
+
+    <script>
+      var  prezzo = 17000;
+      var  iva = 0.22;
+      var  scontofattura = 0.10;
+      var  valoreiva = prezzo * iva;
+      var  sconto = prezzo * scontofattura;
+      var  prezzototale = prezzo + valoreiva - sconto;
+
+      
+
+      document.write ("prezzo comprensivo di iva: " + valoreiva+ "€<br>" )
+      document.write ("prezzo scontato senza iva:" + sconto + "€<br>")
+      document.write ( "prezzo totale macchina:" + prezzototale + "€" )
+    
+    </script>
+
+
+
+
+</body>
+</html>
