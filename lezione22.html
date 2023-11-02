@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- questi due tag servono: il primo per l'indicazione a caretteri latini, e il meta vieport che serve per scalare i conteuti della pagine che normalmente inseriremo in tutte le pagine si inseriscono nella sezione head-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <meta name="description" content="descrizine per lo snippet di ricerca">
+<!--bootstrap è composto da due file, il file css e in parte programmazione javascript-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--bootstrap è composto anche da una libreria in javascript e si usa "script=src" e può essere inserito in qualunque posto del sito e puo essere messo anche prima della chiusura del tag body, al contrario del link sopra-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+
+<style>
+    /* colore diverso a passaggio del mause sulle singole voci, mettendo il tag "hover*/
+   /* 
+    .nav-link{ color: rgb(208, 255, 0);font-weight: 500px; }*/
+#menu{ text-decoration:none;}
+.list-group-item:hover{background-color: aquamarine;}/*per "hover" sta a significare quando passa sopra con il mouse*/
+#menutop:hover { color: rgb(242, 255, 0); font-weight: 500px;}  
+
+</style>
+<!--questo tagg serve per aggiungere l'icona nella barra di navigazione in alto, e andremo a inserire il collegamento dell'icona su "href" -->
+<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/11489/11489567.png " sizes="32x32" >
+
+
+</head>
+<body>
+<!--nel caso di bootstrap meglio usare "id" invece delle "class"-->
+<!--<div id="c">colonna 1</div>-->
+<!-- quest "nav" è stata copiata da boostrapp-->
+<!--questa navbarr hè segnata con il color "bg-body-tertiary, opure possiamo metterne altri, esempio "bg-primary" data-bs-theme="dark""-->
+<!--con il tag "style background-imag possiamo mettere un immagine nella barra di navigazione"-->
+<!--comincia la barra di navigazione-->
+<nav class="navbar navbar-expand-lg fixed-top" style="background-image:url(https://cdn.pixabay.com/photo/2016/07/30/20/52/vintage-1557993_1280.jpg);">
+    <div class="container-fluid">
+        <!--con questo tag possiamo aggiungere un icona con il logo dell'azienda-->
+        <!--nel tag "img si inserisce limmagine"-->
+        <img src="https://cdn-icons-png.flaticon.com/128/11489/11489567.png "  alt="Logo" width="30" height="24" class="d-inline-block align-text-top">  
+      <a class="navbar-brand" href="#" style="color: white;">Cucine</a>
+      <!--titolo della barra di navigazione-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--menu hamburger, quello che viene giu a tendina-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--il raggrupamento delle voci di menu-->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 10px;">
+          <!--nav item sono le singole voci del menu-->
+            <li class="nav-item">
+                <!--se aggiungiamo la voce "acrive al nav link possiamo rendere più forte il carattere"-->
+            <a class="nav-link" id="menutop" aria-current="page" href="#">CHI SIAMO</a>
+          </li>
+          <!--per copiare unaltra voce del menu basta copiare l'intero "li"-->
+          <li class="nav-item">
+            <a class="nav-link active"id="menutop" href="#">CANALI</a>
+          </li>
+          <li class="nav-item">
+            <!--aggiungendo "disbled il link non sarà disponibile"-->
+            <a class="nav-link"id="menutop" href="#">PRODOTTI</a>
+          </li>
+          <!--nav item dropdown per creare un menu a discesa-->
+          <li class="nav-item dropdown">
+            <!--in questo tag c'è una parte di programazzione di javascipt, ossia "data-bs-toggle"-->
+            <a class="nav-link dropdown-toggle"id="menutop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              VANTAGGI
+            </a>
+            <ul class="dropdown-menu">
+                <!--elementi del menu a discesa-->
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <!--questo tag "divider" è un separatore-->
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li><!--qui termina i dropdwon-->
+          <!--secondo menu a discesa-->
+          <li class="nav-item">
+            <a class="nav-link disabled"id="menutop" aria-disabled="true">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <!--in questo tag c'è una parte di programazzione di javascipt, ossia "data-bs-toggle"-->
+            <a class="nav-link dropdown-toggle"id="menutop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+                <!--elementi del menu a discesa-->
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+             
+            </ul>
+          </li><!--qui termina i dropdwon-->
+          <li class="nav-item">
+            <a class="nav-link disabled"id="menutop" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <!--qui c'è il modulo di ricerca-->
+        <form class="d-flex" role="search">
+            <!--im imput c'è la casella vera e proipr della ricerca-->
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <!--bottone che avvia la ricerca-->
+          <!--cambiando "success" con altri il bottone cambierà colore esempio "warning"-->
+          <button class="btn btn-outline-warning" type="submit" style="border-color: burlywood;">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--fine nav barr di bootstrapp-->
+<!--apertura contenitore-->
+<div class="container" style="padding-top:50px;padding-bottom:10px">
+    <div class="row">
+        <!--colonna 1-->
+     <div class="col-xl-3"style="padding-top:10px;padding-bottom:10px" >
+        <!--prodotto 1 nella colonna 1-->
+        <div class="card" style="width: 18rem;">
+            <!--inseriamo un immagine nella card-->
+        <img src="https://images.pexels.com/photos/1002638/pexels-photo-1002638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+        <div class="card-body">
+            <!--iseriamo il prezzo del prodotto-->
+          <h5 class="card-title">200€</h5>
+            <!--inseriamo il nome del prodotto-->
+          <p class="card-text">fotocamera digitale.</p>
+            <!--inseriamo un lista con il tag "ul con i vari punti"-->
+          <ul>
+            <li>zoom x4</li>
+            <li>risoluzione 4k </li>
+            <li>stampa digitale</li>
+          </ul>
+          <!--insericosco il bottone per il pagamento di paypale per pagare il prodotto-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="PNR5CT8KE6SSL" />
+            <input type="hidden" name="currency_code" value="EUR" />
+            <input type="image" src="https://www.paypalobjects.com/it_IT/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal, il metodo semplice e sicuro per pagare online" alt="Aggiungi al carrello" />
+          </form>
+        </div>
+    </div>
+</div><!--chiusura colonna 1-->
+
+          
+       
+      <!--colonna 2-->
+     <div class="col-xl-3"style="padding-top:10px;padding-bottom:10px" >
+        <!--prodotto 2-->
+        <div class="card" style="width: 18rem;">
+            <!--inseriamo un immagine nella card-->
+        <img src="https://images.pexels.com/photos/1002638/pexels-photo-1002638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+        <div class="card-body">
+            <!--iseriamo il prezzo del prodotto-->
+          <h5 class="card-title">200€</h5>
+            <!--inseriamo il nome del prodotto-->
+          <p class="card-text">fotocamera digitale.</p>
+            <!--inseriamo un lista con il tag "ul con i vari punti"-->
+          <ul>
+            <li>zoom x4</li>
+            <li>risoluzione 4k </li>
+            <li>stampa digitale</li>
+          </ul>
+          <!--insericosco il bottone per il pagamento di paypale per pagare il prodotto-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="PNR5CT8KE6SSL" />
+            <input type="hidden" name="currency_code" value="EUR" />
+            <input type="image" src="https://www.paypalobjects.com/it_IT/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal, il metodo semplice e sicuro per pagare online" alt="Aggiungi al carrello" />
+          </form>
+        </div>
+    </div>
+</div><!--chiusura colonna 2-->
+        
+          <!--colonna 3-->
+     <div class="col-xl-3"style="padding-top:10px;padding-bottom:10px" >
+        <!--prodotto 3-->
+        <div class="card" style="width: 18rem;">
+            <!--inseriamo un immagine nella card-->
+        <img src="https://images.pexels.com/photos/1002638/pexels-photo-1002638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+        <div class="card-body">
+            <!--iseriamo il prezzo del prodotto-->
+          <h5 class="card-title">200€</h5>
+            <!--inseriamo il nome del prodotto-->
+          <p class="card-text">fotocamera digitale.</p>
+            <!--inseriamo un lista con il tag "ul con i vari punti"-->
+          <ul>
+            <li>zoom x4</li>
+            <li>risoluzione 4k </li>
+            <li>stampa digitale</li>
+          </ul>
+          <!--insericosco il bottone per il pagamento di paypale per pagare il prodotto-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="PNR5CT8KE6SSL" />
+            <input type="hidden" name="currency_code" value="EUR" />
+            <input type="image" src="https://www.paypalobjects.com/it_IT/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal, il metodo semplice e sicuro per pagare online" alt="Aggiungi al carrello" />
+          </form>
+        </div>
+    </div>
+</div><!--chiusura colonna 3-->
+        
+          <!--colonna 4-->
+     <div class="col-xl-3" style="padding-top:10px;padding-bottom:10px">
+        <!--prodotto 4-->
+        <div class="card" style="width: 18rem;">
+            <!--inseriamo un immagine nella card-->
+        <img src="https://images.pexels.com/photos/1002638/pexels-photo-1002638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+        <div class="card-body">
+            <!--iseriamo il prezzo del prodotto-->
+          <h5 class="card-title">200€</h5>
+            <!--inseriamo il nome del prodotto-->
+          <p class="card-text">fotocamera digitale.</p>
+            <!--inseriamo un lista con il tag "ul con i vari punti"-->
+          <ul>
+            <li>zoom x4</li>
+            <li>risoluzione 4k </li>
+            <li>stampa digitale</li>
+          </ul>
+          <!--insericosco il bottone per il pagamento di paypale per pagare il prodotto-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="PNR5CT8KE6SSL" />
+            <input type="hidden" name="currency_code" value="EUR" />
+            <input type="image" src="https://www.paypalobjects.com/it_IT/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal, il metodo semplice e sicuro per pagare online" alt="Aggiungi al carrello" />
+          </form>
+        </div>    
+     </div>
+     </div><!--chiusura colonna 4-->
+     
+    
+</div>
+<!--chiusura contenitore-->
+<!--secondo contenitore-->
+<div class="container" style="padding-top:20px;">
+    <!--prima riga-->
+    <div class="row">
+        <!--prima colonna-->
+  <div class="col-6">
+    <!--inserimento prima card-->
+    <div class="card" style="width: 100%;">
+        <!--inseriamo l'immagine del prodotto che vogliamo vendere-->
+        <img src="https://m.media-amazon.com/images/I/81C9A0E+8TL._AC_SY300_SX300_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">KODAK PIXPRO</h5>
+          <p class="card-text">KODAK PIXPRO Astro Zoom AZ405-BK - Fotocamera digitale da 20 MP, con zoom ottico 40X, grandangolare da 24 mm, video Full HD 1080P e LCD da 3" (nero)</p>
+          <!--isenriamo il collegamento di amazon per comprare il prodotto, tramite affilizione amazon-->
+          <a href="https://amzn.to/465g6O4" class="btn btn-warning">Go somewhere</a>
+        </div>
+      </div><!--chiusura prima card-->
+
+  </div><!--chiusura prima colonna-->
+   <div class="col-6"><!--seconda colonna-->
+    <!--inserimento seconda card-->
+    <div class="card" style="width: 100%;">
+        <img src="https://m.media-amazon.com/images/I/81C9A0E+8TL._AC_SY300_SX300_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">KODAK PIXPRO</h5>
+          <p class="card-text">KODAK PIXPRO Astro Zoom AZ405-BK - Fotocamera digitale da 20 MP, con zoom ottico 40X, grandangolare da 24 mm, video Full HD 1080P e LCD da 3" (nero)</p>
+          <a href="https://amzn.to/465g6O4" class="btn btn-warning">Go somewhere</a>
+        </div>
+      </div><!--chiusura seconda card-->
+
+   </div><!--chiusura seconda colonna-->
+</div>
+</div><!--chiusura primo contenitore-->
+
+
+
+
+
+  <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/0f7a7a767a802d8e9c6b1aca/script.js"></script> <!-- End cookieyes banner -->
+</body>
+</html>
