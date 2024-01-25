@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #fname{
+        color:blue;
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <h1><center>iscriviti al sito</center></h1>
+    <hr>
+    <form autocomplete="on">
+        <!--inseirmento del nome-->
+        <label for="fname">NOME:</label>  
+        <input type="text" id="fname"  name="fname" placeholder="giuseppe" onfocus="colore(this)">
+        <!--inserimenot del cognome-->
+        <label for="lname">COGNOME:</label>  
+        <input type="text" id="lname"  name="lname" placeholder="pepe"onfocus="colore(this)"><BR><BR>
+        <!--inserimento luogo di nascita-->
+        <label for="where">LUOGO DI NASCITA:</label>
+        <input type="text"  id="where" name="where" placeholder="luogo di nascita"onfocus="colore(this)"><br><br>
+        <!--inserimento data di nascita-->
+        <input type="date"onfocus="colore(this)" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!--inserimento del sesso-->
+        <label for="cars">SESSO:</label>
+        <select name="cars" id="cars"onfocus="colore(this)">
+          <option value="m"onclick= >MASCHIO</option>
+          <option value="f"onclick= >FEMMINA</option>
+          <option value="altro"onclick= >ALTRO</option>
+        </select><br><br>
+        <!--inserimento foto documento-->
+        <input type="image"id="invio" name ="invio"  src="https://th.bing.com/th/id/OIP.jThZAzgDS_zfIMi1AB622QHaE7?rs=1&pid=ImgDetMain"><br><br>
+
+
+    </form>
+    <!--javascript-->
+    
+    <script>
+        function  colore(cambiacolore) {
+           cambiacolore.style.backgroundColor= "aquamarine";
+        }    
+    </script>
+   
+  
+
+</body>
+</html>
